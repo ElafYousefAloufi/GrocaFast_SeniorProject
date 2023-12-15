@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/img_1">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:onClick="openActivityAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:layout_marginLeft="15dp" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="207dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/baseline_admin_panel_settings_24"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add Items"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custome_username_icon"
+            android:drawablePadding="12dp"
+            android:hint="Enter an item to be added.."
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#3000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/logo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="609dp"
+            android:autofillHints=""
+            android:drawableLeft="@drawable/custome_username_icon" />
+
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custome_username_icon"
+            android:drawablePadding="12dp"
+            android:hint="Enter its category.."
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#3000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/logo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="609dp"
+            android:autofillHints=""
+            android:drawableLeft="@drawable/custome_username_icon" />
+
+        <EditText
+            android:id="@+id/aisleNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custome_username_icon"
+            android:drawablePadding="12dp"
+            android:hint="Enter its aisle number.. "
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#3000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/logo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="609dp"
+            android:autofillHints=""
+            android:drawableLeft="@drawable/custome_username_icon" />
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F7F5EB"
+            android:text="Add Item"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_marginTop="650dp"
+            android:layout_marginStart="95dp"/>
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F7F5EB"
+            android:text="Delete Item"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_marginTop="650dp"
+            android:layout_marginStart="210dp"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

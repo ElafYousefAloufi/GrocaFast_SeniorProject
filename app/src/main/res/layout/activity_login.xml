@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_1"
+    tools:context=".ListActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grocery"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custome_username_icon"
+            android:drawablePadding="12dp"
+            android:hint="Enter your username.."
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#3000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/logo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="609dp"
+            android:drawableLeft="@drawable/custome_username_icon" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F7F5EB"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/create"
+                android:text="Don't have an account? "
+                android:textColor="#3000"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:paddingLeft="100dp"
+                />
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Sign up"
+                android:textColor="#5B977F"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

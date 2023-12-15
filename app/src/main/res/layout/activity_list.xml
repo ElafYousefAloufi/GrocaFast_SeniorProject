@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacoground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <ImageView
+
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="360dp"
+            android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="291dp"
+                android:layout_height="337dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginEnd="40dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:divider="#A6A6A6"
+                android:dividerHeight="0.5pt"
+                android:longClickable="true"
+                android:scrollbars="horizontal">
+
+
+            </ListView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="550dp"
+                android:layout_marginStart="170dp"
+                android:text="Suggestions"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="wrap_content"
+                android:layout_height="99dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="100dp"
+                android:backgroundTint="#5B977F"
+                android:layout_marginLeft="70dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="77dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:divider="#FFFFFF"
+                android:dividerHeight="0.5pt"
+                android:longClickable="true"
+                android:scrollbars="horizontal">
+
+
+            </ListView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/grocery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Grocery List"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="833dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487">
+
+
+
+        <!--   <Button
+               android:id="@+id/generate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="70dp"
+               android:text="Generate Map"
+               android:textAllCaps="false"
+               android:layout_marginTop="650dp"
+               android:backgroundTint="#5B977F" />-->
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="226dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="e.g. Milk.."
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#331B1A1A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="Add Item"
+        android:textAllCaps="false"
+        android:backgroundTint="#F7F5EB"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#5B977F"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

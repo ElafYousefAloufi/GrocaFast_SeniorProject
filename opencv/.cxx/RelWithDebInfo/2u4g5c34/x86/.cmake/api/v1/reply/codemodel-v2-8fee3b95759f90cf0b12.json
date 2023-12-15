@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "opencv_jni_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-opencv_jni_shared-RelWithDebInfo-a771d4e4197c98a90937.json",
+					"name" : "opencv_jni_shared",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/manar/AndroidStudioProjects/grocafast/opencv/.cxx/RelWithDebInfo/2u4g5c34/x86",
+		"source" : "C:/Users/manar/AndroidStudioProjects/grocafast/opencv/libcxx_helper"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

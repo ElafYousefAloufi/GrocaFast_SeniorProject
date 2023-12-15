@@ -1,0 +1,3 @@
+C:/projects/androidcolorblind/opencv/.cxx/RelWithDebInfo/4o2g4f4m/x86/CMakeFiles/opencv_jni_shared.dir
+C:/projects/androidcolorblind/opencv/.cxx/RelWithDebInfo/4o2g4f4m/x86/CMakeFiles/edit_cache.dir
+C:/projects/androidcolorblind/opencv/.cxx/RelWithDebInfo/4o2g4f4m/x86/CMakeFiles/rebuild_cache.dir

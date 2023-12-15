@@ -1,0 +1,3 @@
+C:/Users/manar/AndroidStudioProjects/grocafast/opencv/.cxx/RelWithDebInfo/2u4g5c34/x86/CMakeFiles/opencv_jni_shared.dir
+C:/Users/manar/AndroidStudioProjects/grocafast/opencv/.cxx/RelWithDebInfo/2u4g5c34/x86/CMakeFiles/edit_cache.dir
+C:/Users/manar/AndroidStudioProjects/grocafast/opencv/.cxx/RelWithDebInfo/2u4g5c34/x86/CMakeFiles/rebuild_cache.dir
